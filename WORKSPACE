@@ -12,6 +12,14 @@ http_archive(
     ],
 )
 
+http_jar = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_jar")
+
+http_jar(
+    name = "log4j-api",
+    sha256 = "7ae3fdde7ab0cae4735a2aec04381ad9b6e25c93d24205f3ed315d9866f12fe1",
+    url = "https://repository.apache.org/content/repositories/releases/log4j/log4j/1.2.16/log4j-1.2.16.jar",
+)
+
 load("@bazel_skylib//:workspace.bzl", "bazel_skylib_workspace")
 bazel_skylib_workspace()
 
