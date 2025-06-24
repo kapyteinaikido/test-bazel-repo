@@ -6,7 +6,7 @@ package(default_visibility = ["//visibility:public"])
 java_library(
     name = "java-maven-lib",
     srcs = glob([
-        "src/main/java/com/example/myproject/App.java",
+        "src/main/java/com/example/myproject/Apblablallksadjasjlkasdf.java",
     ]),
     deps = [
         "@maven//:com_google_code_findbugs_jsr305",
