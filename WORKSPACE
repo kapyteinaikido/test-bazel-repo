@@ -1,7 +1,7 @@
 workspace(name = "rules_endor")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
-
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_jar")
 bazel_skylib_version = "1.1.1"
 http_archive(
     name = "bazel_skylib",
@@ -11,8 +11,6 @@ http_archive(
         "https://github.com/bazelbuild/bazel-skylib/releases/download/{version}/bazel-skylib-{version}.tar.gz".format(version = bazel_skylib_version),
     ],
 )
-
-http_jar = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_jar")
 
 http_jar(
     name = "log4j-api",
