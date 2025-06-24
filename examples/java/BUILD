@@ -5,7 +5,7 @@ package(default_visibility = ["//visibility:public"])
 
 java_library(
     name = "java-maven-lib",
-    srcs = "src/main/java/com/example/myproject/Apblablallksadjasjlkasdf.java",
+    srcs = ["src/main/java/com/example/myproject/Apblablallksadjasjlkasdf.java"],
     deps = [
         "@maven//:com_google_code_findbugs_jsr305",
         "@maven//:com_google_errorprone_error_prone_annotations",
