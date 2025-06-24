@@ -15,6 +15,7 @@ java_library(
         "@maven//:org_checkerframework_checker_qual",
         "@maven//:org_codehaus_mojo_animal_sniffer_annotations",
         "@maven//:org_apache_commons_commons_text",
+        "@log4j-api//jar",
     ],
 )
 
