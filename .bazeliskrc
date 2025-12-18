@@ -1,0 +1,2 @@
+# .bazeliskrc
+BAZELISK_BASE_URL=https://artifactory.mycompany.com/bazel
