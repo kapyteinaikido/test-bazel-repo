@@ -18,7 +18,7 @@ maven.install(
         "org.apache.commons:commons-text:1.10.0",
         "junit:junit:4.13.2",
     ],
-    lock_file = "//:maven_install.json",
+    lock_file = "//endorctl/maven_install.json:maven_install",
     repositories = [
         "https://repo1.maven.org/maven2",
     ],
